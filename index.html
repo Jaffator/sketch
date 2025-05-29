@@ -11,8 +11,15 @@
     <div class="wrapper">
       <h2>Sketch</h2>
       <div class="input">
-        <input type="number" id="number" value="0" />
-        <button id="changebtn">Change grid</button>
+        <input type="number" id="number" value="16" max="100" min="0" />
+        <div class="switch-group">
+          <label for="erase-switch" class="switch-label">Erase mode</label>
+          <label class="switch">
+            <input id="erase-mode" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <button id="clear">clear</button>
       </div>
       <div class="grid-container"></div>
     </div>
